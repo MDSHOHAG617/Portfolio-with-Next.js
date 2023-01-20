@@ -1,49 +1,47 @@
 import Image from "next/image";
 import React from "react";
-import profile from "../../public/images/profile3.png";
+import banner from "../../public/images/banner.jpg";
 import { Typewriter } from "react-simple-typewriter";
-
 const Hoome = () => {
   return (
-    <div className="" id="#home">
-      <div className=" hero-content flex-col lg:flex-row-reverse ">
-        {" "}
-        <div className="">
-          <Image
-            className="w-64 lg:w-100 "
-            src={profile}
-            alt="Picture of the author"
+    <div className=" flex  justify-center  lg:mt-44 lg:ml-60" id="#home">
+      <Image
+        className="fixed lg:w-full lg:h-screen lg:top-0 opacity-95 items-center opacity-90"
+        src={banner}
+      ></Image>
+
+      <h1 className=" z-50  mt-24 lg:mt-0  text-white text-sm lg:text-3xl font-semibold  ">
+        Hello! I’m Md Shohag
+      </h1>
+      <div className="z-50 lg:absolute text-left fixed mt-28 lg:mt-16  ">
+        <span
+          className="text-xl lg:text-[50px]"
+          style={{
+            color: "#ffffff",
+            fontWeight: "bold",
+            fontSize: "px",
+            marginTop: "15px",
+          }}
+        >
+          <Typewriter
+            words={[
+              "A MERN stack developer",
+              "A Front end developer",
+              "A React.Js Developer",
+              "A JavaScript Developer",
+            ]}
+            loop={5}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
           />
-        </div>
-        <div className="w-96">
-          {" "}
-          <h1 className="text-2xl lg:text-5xl font-bold font-serif">
-            Hello! I’m Md Shohag
-          </h1>
-          <span
-            style={{ color: "slateblue", fontWeight: "bold", fontSize: "20px" }}
-          >
-            {/* Style will be inherited from the parent element */}
-            <Typewriter
-              words={["A MERN stack web developer", "Sleep", "Code", "Repeat!"]}
-              loop={5}
-              cursor
-              cursorStyle="_"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-              // onLoopDone={handleDone}
-              // onType={handleType}
-            />
-          </span>
-          <p className="py-6 text-justify">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
-        </div>
+        </span>
       </div>
+      <button className="btn btn-xs lg:btn-md btn-outline  absolute mt-32 lg:mt-32 bg-transparent-400 border-green-400 text-green-400 hover:bg-green-400 hover:text-white lg:px-10 rounded-full hover:border-green-400 ">
+        Hire me{" "}
+      </button>
     </div>
   );
 };

@@ -2,9 +2,10 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="my-96" id="projects">
-      Projects
-    </div>
+    <div
+      className="mt-96 lg:ml-[275px] text-white z-50 absolute"
+      id="about"
+    ></div>
   );
 };
 

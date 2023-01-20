@@ -4,16 +4,18 @@ import Projects from "./Components/Projects.js";
 import Hoome from "./Components/Hoome.js";
 import { BsArrowUpCircle } from "react-icons/bs";
 import Link from "next/link.js";
+import Footer from "./Components/Footer.js";
 
 export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <Hoome />
-      <About />
+      {/* <Hoome /> */}
+      {/* <About /> */}
       <Projects />
+      {/* <Footer /> */}
       <Link href="#navbar" className="relative text-end ">
-        <BsArrowUpCircle className="text-3xl  m-16 fixed bottom-0 right-0 z-50 " />
+        <BsArrowUpCircle className="text-3xl  m-16 fixed bottom-0 right-0 z-50 text-white" />
       </Link>
     </div>
   );
