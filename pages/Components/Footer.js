@@ -14,7 +14,7 @@ const Footer = () => {
   console.log(router);
   return (
     <div>
-      <div className="hidden lg:block   fixed h-screen bg-[#111418] text-white p-16 z-20 topNav">
+      <div className="fixed left-0 top-0 hidden lg:block   h-screen bg-[#111418] text-white p-16 z-20 topNav">
         <Image
           className=" lg:w-36 rounded-full mx-auto "
           src={logo}

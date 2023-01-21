@@ -7,11 +7,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar pr-8 lg:px-12 py-4">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+    <div className="sticky top-0">
+      <div className="navbar pr-8 lg:px-12 py-4 ">
+        <div className="navbar-start ">
+          <div className="dropdown ">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -29,7 +29,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 bg-[#15AA97] text-white "
             >
               <li>
                 <Link className="text-md  font-semibold" href="/">
@@ -38,15 +38,15 @@ const Navbar = () => {
               </li>
               <li tabIndex={0}>
                 <Link className="text-md  font-semibold " href="/about">
-                  About Me
+                  About
                 </Link>
               </li>
-
+              {/* 
               <li>
                 <Link className="text-md  font-semibold" href="/whatIDo">
                   what I Do
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link className="text-md  font-semibold " href="/resume">
                   Resume
@@ -72,41 +72,47 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
+          <p className="text-md lg:text-xl">Md's Portfolio</p>
+          <Image
+            className="w-10 lg:w-12 rounded-full mx-auto lg:ml-4"
+            src={logo}
+            alt="Picture of the author"
+          />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link className="text-md  font-semibold" href="/">
+              <Link className="text-lg  font-semibold" href="/">
                 Home
               </Link>
             </li>
             <li tabIndex={0}>
-              <Link className="text-md  font-semibold mx-4" href="/about">
-                About Me
+              <Link className="text-lg  font-semibold mx-2" href="/about">
+                About
               </Link>
             </li>
 
-            <li>
-              <Link className="text-md  font-semibold" href="/whatIDo">
+            {/* <li>
+              <Link className="text-md  font" href="/whatIDo">
                 what I Do
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link className="text-md  font-semibold mx-4" href="/resume">
+              <Link className="text-lg  font-semibold mx-2" href="/resume">
                 Resume
               </Link>
             </li>
             <li>
               {" "}
-              <Link className="text-md font-semibold" href="/myWork">
+              <Link className="text-lg  font-semibold" href="/myWork">
                 My Work
               </Link>
             </li>
             <li>
               {" "}
               <Link
-                className="text-md  font-semibold mx-4"
+                className="text-lg  font-semibold mx-2"
                 href="/achievements"
               >
                 Achievements{" "}
@@ -114,7 +120,7 @@ const Navbar = () => {
             </li>
             <li>
               {" "}
-              <Link className="text-md  font-semibold" href="/contact">
+              <Link className="text-lg  font-semibold" href="/contact">
                 Contact{" "}
               </Link>
             </li>
@@ -125,13 +131,13 @@ const Navbar = () => {
             className="mr-3 hover:text-[#15aa97]"
             href="https://github.com/MDSHOHAG617"
           >
-            <FaGithub className=" lg:text-2xl" />
+            <FaGithub className=" lg:text-4xl" />
           </Link>
           <Link
             className="hover:text-[#15aa97]"
             href="https://www.linkedin.com/in/md-shohag007/"
           >
-            <FaLinkedin className=" lg:text-2xl" />
+            <FaLinkedin className=" lg:text-4xl" />
           </Link>
         </div>
       </div>
