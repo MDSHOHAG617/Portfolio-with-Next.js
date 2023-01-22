@@ -10,8 +10,8 @@ import { FaTwitterSquare } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="sticky top-0">
-      <div className="navbar pr-8 lg:px-12 py-4 ">
-        <div className="navbar-start ">
+      <div className="navbar bg-[#4C4B51] pr-8 lg:px-12 py-4 block lg:hidden">
+        <div className="navbar-start">
           <div className="dropdown ">
             <label tabIndex={0} className="btn btn-ghost lg:hidden ">
               <svg

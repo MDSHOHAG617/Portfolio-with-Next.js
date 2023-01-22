@@ -13,10 +13,10 @@ export default function Home() {
         <Footer />
       </div>
 
-      <div className="lg:w-3/4">
+      <div className="3/4">
         <Navbar />
         <Hoome />
-        {/* <About /> */}
+        <About />
         {/* <Projects /> */}
         {/* <Footer /> */}
         <Link href="#navbar" className="relative text-end ">
