@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import banner from "../../public/images/banner.jpg";
+import banner from "../../public/images/banner7.jpg";
 import author from "../../public/images/profile3.png";
 
 import { Typewriter } from "react-simple-typewriter";
-import Footer from "./Footer";
+import Footer from "./SideNav";
 const Hoome = () => {
   return (
     <div id="#home">
@@ -16,11 +16,10 @@ const Hoome = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          // opacity: "0.7",
         }}
-        className="p-64"
+        className=""
       >
-        <div className="text-white text-center items-center">
+        <div className="text-white text-center items-center lg:p-52 lg:ml-32 py-32">
           <p className="text-2xl font-semibold mb-4">Hi, I'm Md Shohag</p>
 
           <span
@@ -48,7 +47,7 @@ const Hoome = () => {
             />
           </span>
 
-          <p className="text-xl  mt-4">
+          <p className="text-xl  mt-4 mx-12">
             Student Of Computer Science And Information Technology at
             Shanto-Mariam University Of Creative Technology
           </p>

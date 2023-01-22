@@ -4,13 +4,14 @@ import Projects from "./Components/Projects.js";
 import Hoome from "./Components/Hoome.js";
 import { BsArrowUpCircle } from "react-icons/bs";
 import Link from "next/link.js";
-import Footer from "./Components/Footer.js";
+import Footer from "./Components/SideNav.js";
+import SideNav from "./Components/SideNav.js";
 
 export default function Home() {
   return (
     <div className=" flex ">
       <div className="lg:w-1/4">
-        <Footer />
+        <SideNav />
       </div>
 
       <div className="3/4">

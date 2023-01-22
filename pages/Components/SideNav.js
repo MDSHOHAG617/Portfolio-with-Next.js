@@ -9,7 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import Image from "next/image";
 
-const Footer = () => {
+const SideNav = () => {
   const router = useRouter();
   console.log(router);
   return (
@@ -98,4 +98,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default SideNav;
