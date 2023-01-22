@@ -8,13 +8,13 @@ import Footer from "./Components/Footer.js";
 
 export default function Home() {
   return (
-    <div className=" grid grid-cols-1 lg:grid-cols-2">
-      <div>
+    <div className=" flex ">
+      <div className="lg:w-1/4">
         <Footer />
       </div>
 
-      <div>
-        {/* <Navbar /> */}
+      <div className="lg:w-3/4">
+        <Navbar />
         <Hoome />
         {/* <About /> */}
         {/* <Projects /> */}

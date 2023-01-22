@@ -4,6 +4,8 @@ import React from "react";
 import logo from "../../public/images/logo.JPG";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -41,12 +43,7 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              {/* 
-              <li>
-                <Link className="text-md  font-semibold" href="/whatIDo">
-                  what I Do
-                </Link>
-              </li> */}
+
               <li>
                 <Link className="text-md  font-semibold " href="/resume">
                   Resume
@@ -72,15 +69,17 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
-          <p className="text-md lg:text-xl">Md's Portfolio</p>
+
+          <p className="text-md font-semibold lg:text-xl block lg:hidden">
+            Md's Portfolio
+          </p>
           <Image
-            className="w-10 lg:w-12 rounded-full mx-auto lg:ml-4"
+            className="w-10 lg:w-12 rounded-full mx-auto lg:ml-4 block lg:hidden"
             src={logo}
             alt="Picture of the author"
           />
         </div>
-        <div className="navbar-center hidden lg:flex">
+        {/* <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link className="text-lg  font-semibold" href="/">
@@ -93,11 +92,6 @@ const Navbar = () => {
               </Link>
             </li>
 
-            {/* <li>
-              <Link className="text-md  font" href="/whatIDo">
-                what I Do
-              </Link>
-            </li> */}
             <li>
               <Link className="text-lg  font-semibold mx-2" href="/resume">
                 Resume
@@ -125,19 +119,31 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="navbar-end">
+        </div> */}
+        <div className="navbar-end ">
           <Link
-            className="mr-3 hover:text-[#15aa97]"
+            className=" hover:text-[#15aa97] block lg:hidden"
             href="https://github.com/MDSHOHAG617"
           >
-            <FaGithub className=" lg:text-4xl" />
+            <FaGithub className="text-2xl lg:text-4xl" />
           </Link>
           <Link
-            className="hover:text-[#15aa97]"
+            className="mx-2 hover:text-[#15aa97] block lg:hidden"
             href="https://www.linkedin.com/in/md-shohag007/"
           >
-            <FaLinkedin className=" lg:text-4xl" />
+            <FaLinkedin className="text-2xl lg:text-4xl" />
+          </Link>
+          <Link
+            className="mr-2 hover:text-[#15aa97] block lg:hidden"
+            href="https://www.facebook.com/profile.php?id=100004130176262"
+          >
+            <FaFacebook className=" text-2xl lg:text-4xl" />
+          </Link>
+          <Link
+            className="hover:text-[#15aa97] block lg:hidden"
+            href="https://twitter.com/cr007_jb"
+          >
+            <FaTwitterSquare className=" text-2xl lg:text-4xl" />
           </Link>
         </div>
       </div>
