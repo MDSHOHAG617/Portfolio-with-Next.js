@@ -1,10 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import banner from "../../public/images/banner7.jpg";
-import author from "../../public/images/profile3.png";
 
 import { Typewriter } from "react-simple-typewriter";
-import Footer from "./SideNav";
 const Hoome = () => {
   return (
     <div id="#home">

@@ -20,8 +20,8 @@ export default function Home() {
         <Hoome />
         <About />
         <WhatIDo />
-        {/* <Projects /> */}
-        {/* <Footer /> */}
+        <Projects />
+        <Footer />
         <Link href="#navbar" className="relative text-end ">
           <BsArrowUpCircle className="text-3xl  m-16 fixed bottom-0 right-0 z-50 text-white" />
         </Link>
