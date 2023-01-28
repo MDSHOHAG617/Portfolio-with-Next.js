@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
 
           <p className="text-md font-semibold lg:text-xl block lg:hidden">
-            Md's Portfolio
+            Md&apos;s Portfolio
           </p>
           <Image
             className="w-10 lg:w-12 rounded-full mx-auto lg:ml-4 block lg:hidden"

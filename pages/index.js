@@ -6,6 +6,7 @@ import { BsArrowUpCircle } from "react-icons/bs";
 import Link from "next/link.js";
 import Footer from "./Components/SideNav.js";
 import SideNav from "./Components/SideNav.js";
+import WhatIDo from "./Components/WhatIDo.js";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Navbar />
         <Hoome />
         <About />
+        <WhatIDo />
         {/* <Projects /> */}
         {/* <Footer /> */}
         <Link href="#navbar" className="relative text-end ">

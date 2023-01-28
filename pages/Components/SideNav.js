@@ -14,9 +14,9 @@ const SideNav = () => {
   console.log(router);
   return (
     <div>
-      <div className="fixed left-0 top-0 hidden lg:block   h-screen bg-[#111418] text-white p-16 z-20 topNav">
+      <div className="fixed left-0 top-0 hidden lg:block   h-screen bg-[#111418] text-white p-12 z-20 topNav">
         <Image
-          className=" lg:w-36 rounded-full mx-auto "
+          className=" lg:w-40 rounded-full mx-auto border-solid border-8 border-[#3E4449]"
           src={logo}
           alt="Picture of the author"
         />
@@ -35,6 +35,14 @@ const SideNav = () => {
             href="/#about"
           >
             About Me
+          </Link>
+        </p>
+        <p className="text-center text-lg font-semibold my-4">
+          <Link
+            className={router.asPath == "/#whatIDo" ? styles.active : ""}
+            href="/#whatIDo"
+          >
+            What I Do
           </Link>
         </p>
 

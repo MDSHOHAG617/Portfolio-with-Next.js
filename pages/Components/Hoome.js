@@ -20,7 +20,7 @@ const Hoome = () => {
         className=""
       >
         <div className="text-white text-center items-center lg:p-52 lg:ml-32 py-32">
-          <p className="text-2xl font-semibold mb-4">Hi, I'm Md Shohag</p>
+          <p className="text-2xl font-semibold mb-4">Hi, I am Md Shohag</p>
 
           <span
             style={{
