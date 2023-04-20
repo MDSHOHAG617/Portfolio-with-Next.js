@@ -39,14 +39,14 @@ const Navbar = () => {
                 </Link>
               </li>
               <li tabIndex={0}>
-                <Link className="text-md  font-semibold " href="/about">
+                <Link className="text-md  font-semibold " href="#about">
                   About
                 </Link>
               </li>
 
               <li>
-                <Link className="text-md  font-semibold " href="/resume">
-                  Resume
+                <Link className="text-md  font-semibold " href="#whatIDo">
+                  What I do
                 </Link>
               </li>
               <li>
